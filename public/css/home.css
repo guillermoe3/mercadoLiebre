@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color:#ebebeb;
+    width: 100vw;
+}
+
+img{
+    max-width: 100%;
+}
+
+main.content {
+
+    
+    font-size: 12px;
+    color: #666;
+    width: 90%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+
+
+}
+.articles-div {
+    box-shadow: 0px​ ​0px​ ​10px​ ​rgb​(​66, 135, 245);
+    /*box-shadow: 60px 16px green;*/
+    background-color: white;
+    margin-bottom: 10px;
+    border-top: solid 1px #ebebeb;
+    
+    
+}
+
+h3 {
+    text-align: left;
+}
+
+
+.titulares{
+    font-size: 24px;;
+}
+
+.precios{
+    font-size:18px;
+}
+
+.descuentos {
+    font-size: 16px;
+}
+
+.descripciones {
+    visibility: hidden;
+    font-size: 16px;
+}
+
+@media (min-width:361px){
+    .articles-div {
+        box-shadow: 0px​ ​0px​ ​10px​ ​rgb​(​100​, ​100​, ​100​);
+    }
+    .descripciones {
+        visibility: visible;
+    }
+
+    #main-menu{
+        visibility: visible;
+    }
+    #user-menu {
+        visibility: visible;
+    }
+
+}
+
+@media (min-width:769px){
+    .articles-div {
+        box-shadow: 0px​ ​0px​ ​10px​ ​rgb​(​100​, ​100​, ​100​);
+    }
+    .descripciones {
+        visibility: visible;
+    }
+    #main-menu{
+        visibility: visible;
+    }
+    #user-menu {
+        visibility: visible;
+    }
+}
