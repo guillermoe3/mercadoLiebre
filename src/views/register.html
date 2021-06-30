@@ -61,49 +61,48 @@
         </nav>
     </header>
     <main>
-        <form action="/register" method="POST">
+
+        <form action="/register" method="POST" class="form-class">
             <p>
-                <label>Nombre: </label>
-                <input type="text" name="nombre">
+                <input type="text" name="nombre" placeholder="Nombre y Apellido">
             </p>
             <p>
-                <label>Apellido: </label>
-                <input type="text" name="apellido">
+                <input type="text" name="usuario" placeholder="Nombre de usuario">
             </p>
             <p>
-                <label>Nombre de usuario: </label>
-                <input type="text" name="usuario">
+                <input type="email" name="email" placeholder="Email">
             </p>
             <p>
-                <label>Fecha de nacimiento: </label>
+                <label>Fecha de nacimiento </label><br>
                 <input type="date" name="fecha">
             </p>
             <p>
-                <label>Domicilio: </label>
-                <input type="text" name="domicilio">
+                
+                <input type="text" name="domicilio" placeholder="Domicilio">
             </p>
-            <p>Queres comprar o vender?</p>
-            <p>
+            <label>Queres comprar o vender?</label>
+            <p id="perfil">
                 <input type="radio" id="comprar" value="comprar" name="quequiere">
                 <label for="comprar"> Comprar </label>
 
                 <input type="radio" id="vender" value="vender" name="quequiere">
                 <label for="vender"> Vender</label>
             </p>
-            <p>
-                <label for="electro"> Electro: </label>
-                <input type="checkbox" name="interes" id="electro" value="electro">
-                <label for="moda"> Moda: </label>
-                <input type="checkbox" name="interes" id="moda" value="moda">
+            <label>Intereses </label><br>
+            <p id="radios">
+                
+                <input type="checkbox" name="interes" id="electro" value="electro"><label for="electro"> Electro </label>
+                
+                <input type="checkbox" name="interes" id="moda" value="moda"><label for="moda"> Moda </label>
 
-                <label for="hogar"> Hogar: </label>
-                <input type="checkbox" name="interes" id="hogar" value="hogar">
+                
+                <input type="checkbox" name="interes" id="hogar" value="hogar"><label for="hogar"> Hogar </label>
 
-                <label for="jugueteria"> Juguetería: </label>
-                <input type="checkbox" name="interes" id="jugueteria" value="jugueteria">
+                
+                <input type="checkbox" name="interes" id="jugueteria" value="jugueteria"><label for="jugueteria"> Juguetería </label>
 
-                <label for="vida"> Vida Sana: </label>
-                <input type="checkbox" name="interes" id="vida" value="vida">
+                
+                <input type="checkbox" name="interes" id="vida" value="vida"><label for="vida"> Vida Sana </label>
 
 
             </p>
@@ -112,19 +111,19 @@
                 <input type="file" name="foto" accept=".jpg .jpeg">
             </p>
             <p>
-                <label for="pass"> Ingrese su contraseña: </label>
-                <input type="password" name="pass" id="pass">
+                
+                <input type="password" name="pass" id="pass" placeholder="Ingrese su contraseña">
             </p>
             <p>
-                <label for="pass2"> Ingrese nuevamente la contraseña: </label>
-                <input type="password" name="pass2" id="pass2">
+                
+                <input type="password" name="pass2" id="pass2" placeholder="Ingrese nuevamente la contraseña">
             </p>
             <a href="/src/views/home.html">
-                <button type="submit"> Enviar </button>
+                <button type="submit">Enviar </button>
             </a>
 
-            <p>
-                <button type="reset"> Cancelar </button>
+            <p id="cancel">
+                <button type="reset">Cancelar </button>
             </p>
 
 

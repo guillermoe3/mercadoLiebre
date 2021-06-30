@@ -1,25 +1,80 @@
 input:invalid {
-    border: 2px dashed red;
-  }
-  
-  input:valid {
-    border: 2px solid black;
-  }
-
-  main {
-      margin-top: 10vh;
-      height: 70vh;
-  }
-
-  main form {
-    display: flex;
-    flex-direction: column;
-    width: 35vw;
-    
-    align-items: flex-start;
-  
+  border: 2px dashed red;
 }
 
-main form p{
-    margin: 0.2rem;
+main {
+  margin-top: 10vh;
+  height: 70vh;
+  text-align: left;
+  margin-bottom: 20rem;
+}
+
+main form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding-left: 5rem;
+  align-items: flex-start;
+}
+
+main form input {
+  width: 40vw;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.6rem;
+  font-size: 0.8rem;
+  color: #ebebeb;
+  margin-bottom: 1rem;
+}
+
+main form label {
+  text-align: left;
+  font-weight: bold;
+  color: black;
+}
+
+main form p {
+  margin: 0.2rem;
+}
+
+#perfil {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+#radios {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#radios input {
+  width: 10%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#radios label {
+  width: 90%;
+}
+
+#cancel {
+  margin-bottom: 10rem;
+}
+
+main button {
+  width: 10rem;
+  /*
+  margin: 0.5rem;
+  border: solid 1px #ebebeb;
+  border-radius: 0.3rem;*/
+  display: inline-block;
+  padding: 0.3em 1.2em;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 2em;
+  font-weight: 300;
+  text-decoration: none;
+  align-self: center;
 }
