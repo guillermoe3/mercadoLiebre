@@ -4,7 +4,7 @@ const path = require("path")
 
 
 app.get("/", function (req, res){
-    res.send("Esto es / ");
+    return res.sendFile(path.join(__dirname, "../views/home.html"))
 })
 
 app.get("/home", function(req, res){
