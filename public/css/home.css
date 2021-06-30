@@ -142,3 +142,15 @@ p {
         display: flex;
     }
 }
+@media (min-width:1500px) {
+    #banner {
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    align-items: flex-start;
+    align-self: flex-start;
+    }
+}
