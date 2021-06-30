@@ -5,3 +5,21 @@ input:invalid {
   input:valid {
     border: 2px solid black;
   }
+
+  main {
+      margin-top: 10vh;
+      height: 70vh;
+  }
+
+  main form {
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    
+    align-items: flex-start;
+  
+}
+
+main form p{
+    margin: 0.2rem;
+}

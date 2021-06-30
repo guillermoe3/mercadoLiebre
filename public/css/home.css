@@ -2,35 +2,31 @@
     box-sizing: border-box;
     margin: ​0​px​;
     padding: ​0​px​;
-    
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #ebebeb;
     width: 100vw;
-    margin-top:0px;
-    
+    margin-top: 0px;
 }
 
 html {
     overflow-x: hidden;
+    position:relative;
 }
 
 #banner {
     background-image: url("/images/img-home-banner.jpg");
     background-size: contain;
     background-repeat: no-repeat;
-    margin:0px;
+    margin: 0px;
     width: 100vw;
     height: 40vh;
     display: flex;
     align-items: flex-start;
     align-self: flex-start;
-
 }
-
-
 
 main {
     font-size: 12px;
@@ -41,8 +37,8 @@ main {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    
     padding: 0px;
+    
 }
 
 .secciones {
@@ -73,7 +69,8 @@ h3 {
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
+    width: 80%;
+    position: relative;
 }
 
 p {
@@ -86,8 +83,14 @@ p {
     padding: 5px;
     width: 30px​;
     height: 30px;
-    position:absolute; left:90%;
-   
+    border:1px ​solid​ #39b54a;
+    background-color: #fff;
+    border-radius: 50%;
+    /*position:absolute; left:90%;*/
+    position:absolute;
+    right:20px;
+    top: -15px;
+
 }
 
 
@@ -98,7 +101,7 @@ p {
 
 .precios {
     font-size: 18px;
-    width: 10%;
+    width: 30%;
 }
 
 .descuentos {
@@ -109,20 +112,26 @@ p {
 }
 
 .descripciones {
+    opacity: 0;
     color: #666;
     font-size: 16px;
-    display: inline-block;
 }
-
-
+.descripciones:hover {
+    opacity: 100;
+}
+.articles-div:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px
+}
 
 @media (min-width:361px) {
     .articles-div {
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px
     }
     .descripciones {
+        opacity: 100;
         display: flex;
     }
+
 }
 
 @media (min-width:769px) {
